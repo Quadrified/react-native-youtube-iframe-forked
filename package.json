@@ -1,6 +1,6 @@
 {
   "name": "react-native-youtube-iframe-forked",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "A simple wrapper around the youtube iframe js API for react native",
   "main": "dist/index.js",
   "types": "index.d.ts",
