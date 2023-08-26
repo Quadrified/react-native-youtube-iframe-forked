@@ -2,6 +2,13 @@
 
 ![npm](https://img.shields.io/npm/v/react-native-youtube-iframe?style=for-the-badge) ![npm](https://img.shields.io/npm/dm/react-native-youtube-iframe?style=for-the-badge)
 
+This is a fork of the original `react-native-youtube-iframe`. This is not a newer implementation but and updated fork with the following features:
+- Manual Pause function using ref
+- Manual Play function using ref
+- Manual Stop function using ref
+
+----
+
 A wrapper of the Youtube IFrame player API build for react native.
 
 - ✅ Works seamlessly on both ios and android platforms
