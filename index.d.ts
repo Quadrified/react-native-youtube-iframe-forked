@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleProp, ViewStyle} from 'react-native';
-import {WebViewProps} from 'react-native-webview';
+import { StyleProp, ViewStyle } from 'react-native';
+import { WebViewProps } from 'react-native-webview';
 
 export enum PLAYER_STATES {
   ENDED = 'ended',
@@ -27,6 +27,9 @@ export interface YoutubeIframeRef {
   getPlaybackRate: () => Promise<number>;
   getAvailablePlaybackRates: () => Promise<number[]>;
   seekTo: (seconds: number, allowSeekAhead: boolean) => void;
+  playVideo: () => void;
+  pauseVideo: () => void;
+  stopVideo: () => void;
 }
 
 export interface InitialPlayerParams {

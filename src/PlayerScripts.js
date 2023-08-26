@@ -1,4 +1,4 @@
-import {MUTE_MODE, PAUSE_MODE, PLAY_MODE, UNMUTE_MODE} from './constants';
+import { MUTE_MODE, PAUSE_MODE, PLAY_MODE, UNMUTE_MODE } from './constants';
 
 export const PLAYER_FUNCTIONS = {
   muteVideo: 'player.mute(); true;',
@@ -33,6 +33,18 @@ true;
 window.ReactNativeWebView.postMessage(JSON.stringify({eventType: 'getAvailablePlaybackRates', data: player.getAvailablePlaybackRates()}));
 true;
 `,
+
+  playVideoScript: () => {
+    return 'player.playVideo(); true;';
+  },
+
+  pauseVideoScript: () => {
+    return 'player.pauseVideo(); true;';
+  },
+
+  stopVideoScript: () => {
+    return 'player.stopVideo(); true;';
+  },
 
   setVolume: volume => {
     return `player.setVolume(${volume}); true;`;
@@ -258,5 +270,5 @@ export const MAIN_SCRIPT = (
 </html>
 `;
 
-  return {htmlString, urlEncodedJSON};
+  return { htmlString, urlEncodedJSON };
 };
